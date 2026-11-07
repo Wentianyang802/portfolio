@@ -123,7 +123,7 @@
     if (!btn) return;
     if (site.resumeReady && site.resumePath) {
       btn.href = site.resumePath;
-      btn.setAttribute("download", "文科杰_简历2026.pdf");
+      btn.setAttribute("download", "文科杰_简历2026_横.pdf");
       btn.removeAttribute("aria-disabled");
       btn.classList.remove("is-disabled");
       btn.textContent = "下载简历 / RESUME ↓";
