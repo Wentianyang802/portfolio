@@ -1,0 +1,9 @@
+tools/
+deploy/
+*.docx
+*.bat
+*.part.mp4
+.DS_Store
+Thumbs.db
+
+.github_token.txt

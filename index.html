@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#030303">
+  <meta name="description" content="科杰 Kevin · 全能影视编导 · 个人商业作品集">
+  <title>科杰 Kevin — 全能影视编导</title>
+  <link rel="icon" href="assets/favicon.ico" sizes="any">
+  <script>document.documentElement.classList.add('js');</script>
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+</head>
+<body>
+  <div class="scroll-progress" aria-hidden="true"></div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <header class="site-header" data-header>
+    <a class="brand" href="#hero" aria-label="回到首页">
+      <span class="brand-name" data-site-name>科杰 Kevin</span>
+      <span class="brand-title" data-site-title>全能影视编导</span>
+    </a>
+    <nav class="site-nav" aria-label="主导航">
+      <a href="#featured">精选<span>Selected</span></a>
+      <a href="#archive">归档<span>Archive</span></a>
+      <a href="#about">关于<span>About</span></a>
+      <a href="#contact" data-nav-resume>简历<span>Resume</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="hero" aria-label="引言">
+      <div class="hero-hairlines" aria-hidden="true"></div>
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="hero-mist" aria-hidden="true"></div>
+      <canvas class="hero-dust" id="dust" aria-hidden="true"></canvas>
+      <div class="hero-frame" aria-hidden="true">
+        <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+      </div>
+
+      <div class="hero-inner">
+        <p class="hero-kicker">01 / 引言 <span>PROLOGUE</span></p>
+
+        <blockquote class="quote" data-quote>
+          <p class="quote-text">
+            <span class="line line-1">“电影发明以后，</span>
+            <span class="line line-2">人类的生命比起以前</span>
+            <span class="line line-3">延长了至少三倍。”</span>
+          </p>
+          <span class="waterline" aria-hidden="true"></span>
+          <footer class="quote-credit">——《一一》 · 2000年 · 杨德昌</footer>
+        </blockquote>
+
+        <div class="hero-foot">
+          <span class="hero-meta">24 WORKS · 2026</span>
+          <a class="scroll-cue" href="#featured" data-scroll-cue aria-label="向下滚动到精选作品">
+            <span class="scroll-cue-line" aria-hidden="true"><i></i></span>
+            <span class="scroll-cue-text">SCROLL 01 / 向下</span>
+          </a>
+          <span class="hero-frame-rate">24 FPS · COLOR / SILENCE</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section featured" id="featured" aria-labelledby="featured-title">
+      <header class="section-head reveal">
+        <span class="section-index">02</span>
+        <div class="section-title-wrap">
+          <p class="section-kicker">SELECTED WORKS</p>
+          <h2 class="section-title" id="featured-title">精选作品</h2>
+        </div>
+        <span class="section-count" data-featured-count>08</span>
+      </header>
+      <p class="section-note reveal">静音循环预览 · 点击观看完整版 <span>MUTED LOOP / CLICK TO PLAY</span></p>
+      <div class="featured-grid" data-featured-grid></div>
+    </section>
+
+    <section class="section archive" id="archive" aria-labelledby="archive-title">
+      <header class="section-head reveal">
+        <span class="section-index">03</span>
+        <div class="section-title-wrap">
+          <p class="section-kicker">ALL WORKS</p>
+          <h2 class="section-title" id="archive-title">全部作品</h2>
+        </div>
+        <span class="section-count">24</span>
+      </header>
+      <div class="filters reveal" data-filters role="group" aria-label="按类别筛选作品"></div>
+      <div class="archive-grid" data-archive-grid></div>
+    </section>
+
+    <section class="section about" id="about" aria-labelledby="about-title">
+      <header class="section-head reveal">
+        <span class="section-index">04</span>
+        <div class="section-title-wrap">
+          <p class="section-kicker">ABOUT</p>
+          <h2 class="section-title" id="about-title">关于</h2>
+        </div>
+        <span class="section-count">A ROOM / 2026</span>
+      </header>
+
+      <div class="about-grid">
+        <aside class="about-aside reveal">
+          <span class="timecode">00:00:00:00 / 24 FPS</span>
+          <span class="about-rule" aria-hidden="true"></span>
+          <span class="about-aside-en">A ROOM<br>WITHOUT<br>AN AUDIENCE.</span>
+        </aside>
+        <div class="about-copy reveal">
+          <p class="about-bio" data-site-about></p>
+          <ul class="tags" data-site-tags aria-label="能力标签"></ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <header class="section-head reveal">
+        <span class="section-index">05</span>
+        <div class="section-title-wrap">
+          <p class="section-kicker">CONTACT</p>
+          <h2 class="section-title" id="contact-title">联系</h2>
+        </div>
+        <span class="section-count">LET'S MAKE SOMETHING SLOW.</span>
+      </header>
+
+      <div class="contact-grid">
+        <div class="contact-main reveal">
+          <p class="contact-kicker">一起做点慢的东西</p>
+          <p class="contact-label">电话 / PHONE</p>
+          <a class="contact-primary liftable" data-site-phone-link href="tel:19875770473" data-cursor="text">19875770473</a>
+          <p class="contact-primary-note">微信同号 · WECHAT SAME NUMBER</p>
+          <div class="contact-lines is-empty" data-contact-lines>
+            <p data-email-row hidden>
+              <span>邮箱 / EMAIL</span>
+              <a class="contact-email-link" data-site-email href="#"></a>
+            </p>
+          </div>
+        </div>
+        <div class="resume-block reveal">
+          <a class="resume-btn" data-resume href="#" aria-disabled="true">下载简历 / RESUME</a>
+          <p class="resume-note" data-resume-note>简历制作中 · PDF 就位后开启</p>
+        </div>
+      </div>
+
+      <footer class="site-footer">
+        <p>© <span data-year>2026</span> <span data-site-name>科杰 Kevin</span> · 保留所有权利</p>
+        <p class="footer-quote">“电影发明以后，人类的生命比起以前延长了至少三倍。”</p>
+      </footer>
+    </section>
+  </main>
+
+  <dialog class="player" id="player" aria-labelledby="player-title">
+    <div class="player-shell">
+      <button class="player-close" data-player-close type="button" aria-label="关闭播放器">×</button>
+      <div class="player-media">
+        <video id="player-video" controls playsinline preload="metadata"></video>
+      </div>
+      <aside class="player-meta">
+        <p class="player-index" id="player-index"></p>
+        <h2 class="player-title" id="player-title"></h2>
+        <p class="player-info" id="player-info"></p>
+        <p class="player-summary" id="player-summary"></p>
+      </aside>
+    </div>
+  </dialog>
+
+  <noscript>
+    <p class="noscript">这个作品集需要浏览器启用 JavaScript 才能显示作品列表。</p>
+  </noscript>
+
+  <script src="assets/js/site-data.js"></script>
+  <script src="assets/js/works-data.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
