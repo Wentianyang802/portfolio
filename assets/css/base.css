@@ -326,6 +326,62 @@ body::after {
   color: rgba(140, 135, 125, .55);
 }
 
+.hero-copy {
+  margin: clamp(6vh, 8vh, 10vh) 0 0;
+  max-width: 1100px;
+}
+
+.hero-title {
+  width: fit-content;
+  max-width: 100%;
+  margin: 0;
+  font-family: var(--font-serif);
+  font-weight: 400;
+  font-size: clamp(44px, 6vw, 92px);
+  line-height: 1.12;
+  letter-spacing: .04em;
+  color: var(--paper);
+  text-shadow:
+    2px 4px 30px rgba(233, 228, 216, .055),
+    0 0 90px rgba(201, 162, 107, .035);
+}
+
+.hero-bio {
+  margin: clamp(22px, 3.5vh, 36px) 0 0;
+  max-width: 780px;
+  font-family: var(--font-sans);
+  font-size: clamp(14px, 1.05vw, 16.5px);
+  line-height: 2.05;
+  letter-spacing: .02em;
+  color: rgba(233, 228, 216, .72);
+}
+
+.js .hero-title {
+  opacity: 0;
+  transform: translateY(16px);
+  filter: blur(8px);
+}
+
+.hero.is-loaded .hero-title {
+  animation: lineIn 1.8s var(--ease) forwards;
+}
+
+.js .hero-bio {
+  opacity: 0;
+  transform: translateY(12px);
+}
+
+.hero.is-loaded .hero-bio {
+  animation: bioIn 1.4s var(--ease) .42s forwards;
+}
+
+@keyframes bioIn {
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
 .quote {
   margin: clamp(7vh, 9vh, 12vh) 0 0;
   max-width: 1100px;
@@ -411,7 +467,7 @@ body::after {
   display: block;
   width: min(420px, 62%);
   height: 1px;
-  margin: 24px 0 0 auto;
+  margin: clamp(22px, 3.5vh, 38px) 0 0;
   background: linear-gradient(90deg, transparent, rgba(201, 162, 107, .55), rgba(126, 140, 143, .4), transparent);
   background-size: 200% 100%;
   animation: waterFlow 20s linear infinite;
@@ -579,6 +635,24 @@ body::after {
 
   .line-3 {
     margin-left: 0;
+  }
+
+  .hero-title {
+    font-size: clamp(34px, 8vw, 52px);
+    letter-spacing: .03em;
+  }
+
+  .hero-bio {
+    font-size: 14px;
+    line-height: 1.9;
+  }
+
+  .hero-copy {
+    margin-top: clamp(6vh, 8vh, 10vh);
+  }
+
+  .hero-foot {
+    margin-top: clamp(6vh, 8vh, 10vh);
   }
 
   .hero-hairlines {

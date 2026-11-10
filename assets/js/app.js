@@ -21,7 +21,7 @@
 
   function cursorStateFor(target) {
     if (!(target instanceof Element)) return "";
-    if (target.closest("[data-cursor='text'], .quote .line, .section-title, .about-bio")) return "text";
+    if (target.closest("[data-cursor='text'], .hero-title, .section-title, .about-bio")) return "text";
     if (target.closest("[data-cursor='card'], .work-card")) return "card";
     if (target.closest("a, button, .filter-btn, .scroll-cue")) return "link";
     return "";
@@ -611,7 +611,7 @@
 
   function setupMagneticText() {
     if (reducedMotion || !finePointer) return;
-    const targets = $$(".quote .line, .section-title, .contact-primary");
+    const targets = $$(".hero-title, .section-title, .contact-primary");
     targets.forEach((el) => {
       el.classList.add("liftable", "magnetic");
       el.addEventListener("pointermove", (event) => {

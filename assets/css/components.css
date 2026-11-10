@@ -1347,6 +1347,8 @@
 
   .js .quote .line,
   .js .quote-credit,
+  .js .hero-title,
+  .js .hero-bio,
   .js .reveal,
   .js .work-card {
     opacity: 1 !important;
