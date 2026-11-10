@@ -7,9 +7,9 @@ const SITE = {
   phone: "19875770473",
   wechat: "19875770473",
 
-  // 简历已放入 assets/resume.pdf；替换时覆盖同名文件即可
+  // 简历已放入 assets/resume-2026.pdf；替换时覆盖同名文件即可
   resumeReady: true,
-  resumePath: "assets/resume.pdf",
+  resumePath: "assets/resume-2026.pdf",
 
   about:
     "商业创意视频编导。作品横跨品牌广告、商场活动、宣传片与 AIGC 影像。工作覆盖从脚本、拍摄到剪辑的完整流程；也相信技术只是手段，最终留下的是画面里的时间。",
